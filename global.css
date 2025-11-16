@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210.4615 68.4211% 18.6275%;
+    --card: 0 0% 96.0784%;
+    --card-foreground: 210.4615 68.4211% 18.6275%;
+    --popover: 0 0% 96.0784%;
+    --popover-foreground: 210.4615 68.4211% 18.6275%;
+    --primary: 0 0% 91.7647%;
+    --primary-foreground: 210.4615 68.4211% 18.6275%;
+    --secondary: 0 0% 83.1373%;
+    --secondary-foreground: 210.4615 68.4211% 18.6275%;
+    --muted: 0 0% 96.0784%;
+    --muted-foreground: 0 0% 45.098%;
+    --accent: 151.2 91.4634% 67.8431%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 100% 36.0784%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 83.1373%;
+    --input: 0 0% 96.0784%;
+    --ring: 151.2 91.4634% 67.8431%;
+    --chart-1: 210.4615 68.4211% 18.6275%;
+    --chart-2: 151.2 91.4634% 67.8431%;
+    --chart-3: 0 0% 91.7647%;
+    --chart-4: 0 0% 83.1373%;
+    --chart-5: 0 0% 96.0784%;
+    --sidebar: 0 0% 96.0784%;
+    --sidebar-foreground: 210.4615 68.4211% 18.6275%;
+    --sidebar-primary: 0 0% 91.7647%;
+    --sidebar-primary-foreground: 210.4615 68.4211% 18.6275%;
+    --sidebar-accent: 151.2 91.4634% 67.8431%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 83.1373%;
+    --sidebar-ring: 151.2 91.4634% 67.8431%;
+    --font-sans:
+      system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+      Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    --font-serif: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    --font-mono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --radius: 0.5rem;
+    --shadow-x: 0px;
+    --shadow-y: 2px;
+    --shadow-blur: 20px;
+    --shadow-spread: 0px;
+    --shadow-opacity: 0.1;
+    --shadow-color: #000000;
+    --shadow-2xs: 0px 2px 20px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0px 2px 20px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow-2xl: 0px 2px 20px 0px hsl(0 0% 0% / 0.25);
+    --tracking-normal: 0.025em;
+    --spacing: 0.25rem;
+  }
+
+  .dark:root {
+    --background: 210.4615 68.4211% 18.6275%;
+    --foreground: 0 0% 91.7647%;
+    --card: 210.4615 55.5556% 22.9412%;
+    --card-foreground: 0 0% 91.7647%;
+    --popover: 210.4615 55.5556% 22.9412%;
+    --popover-foreground: 0 0% 91.7647%;
+    --primary: 0 0% 91.7647%;
+    --primary-foreground: 210.4615 68.4211% 18.6275%;
+    --secondary: 208.125 21.9178% 28.6275%;
+    --secondary-foreground: 0 0% 91.7647%;
+    --muted: 210.4615 55.5556% 22.9412%;
+    --muted-foreground: 0 0% 45.098%;
+    --accent: 151.2 91.4634% 67.8431%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 100% 36.0784%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 208.125 21.9178% 28.6275%;
+    --input: 210.4615 55.5556% 22.9412%;
+    --ring: 151.2 91.4634% 67.8431%;
+    --chart-1: 0 0% 91.7647%;
+    --chart-2: 151.2 91.4634% 67.8431%;
+    --chart-3: 210.4615 68.4211% 18.6275%;
+    --chart-4: 208.125 21.9178% 28.6275%;
+    --chart-5: 210.4615 55.5556% 22.9412%;
+    --sidebar: 210.4615 55.5556% 22.9412%;
+    --sidebar-foreground: 0 0% 91.7647%;
+    --sidebar-primary: 0 0% 91.7647%;
+    --sidebar-primary-foreground: 210.4615 68.4211% 18.6275%;
+    --sidebar-accent: 151.2 91.4634% 67.8431%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 208.125 21.9178% 28.6275%;
+    --sidebar-ring: 151.2 91.4634% 67.8431%;
+    --font-sans:
+      system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+      Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    --font-serif: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    --font-mono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --radius: 0.5rem;
+    --shadow-x: 0px;
+    --shadow-y: 2px;
+    --shadow-blur: 20px;
+    --shadow-spread: 0px;
+    --shadow-opacity: 0.1;
+    --shadow-color: #000000;
+    --shadow-2xs: 0px 2px 20px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0px 2px 20px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0px 2px 20px 0px hsl(0 0% 0% / 0.1), 0px 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow-2xl: 0px 2px 20px 0px hsl(0 0% 0% / 0.25);
+  }
+}
